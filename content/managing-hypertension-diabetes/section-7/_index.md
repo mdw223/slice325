@@ -5,7 +5,7 @@ title = 'Diabetes Knowledge Post-Assessment'
 
 {{< quizdown >}}
 ---
-primaryColor: red
+primaryColor: steelBlue
 shuffleQuestions: false
 shuffleAnswers: true
 ---
