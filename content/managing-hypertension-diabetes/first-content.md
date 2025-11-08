@@ -6,7 +6,7 @@ chapter = true
 pre = "<b>X. </b>"
 +++
 
-
+![logo](https://github.com/mdw223/slice325/blob/main/themes/hugo-theme-learn/static/images/SLICE325-Logo-1.png)
 
 ## Course Objectives
 
