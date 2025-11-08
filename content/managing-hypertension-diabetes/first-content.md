@@ -5,7 +5,6 @@ weight = 5
 chapter = true
 pre = "<b>a. </b>"
 +++
-![logo](/images/SLICE325-Logo-1.png)
 
 ## Course Objectives
 
