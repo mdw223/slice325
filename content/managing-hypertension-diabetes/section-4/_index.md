@@ -5,6 +5,8 @@ pre = "g. "
 weight = 8 
 +++
 
+![](/images/section-4/Managing Hypertension & Diabetes  Preventing Falls Course.pdf-image-047.jpg)
+
 ## Risk Factors for Falls
 
 Several risk factors contribute to an increased risk of falls in clients with hypertension and diabetes:
