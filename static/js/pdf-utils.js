@@ -19,10 +19,81 @@ function createCertificate(name, course, score, filename = 'certificate.pdf') {
     const bg = [255, 255, 255];
 
     // Logo image (from static/images)
-    const logoPath = '/images/SLICE325-Logo-1.png';
+    // Try multiple candidate paths so the image loads correctly on GitHub Pages
+    // (site may be served from a subpath like /repo-name/). We'll attempt:
+    //  - /images/SLICE325-Logo-1.png
+    //  - images/SLICE325-Logo-1.png (relative)
+    //  - <base href> + images/SLICE325-Logo-1.png
+    //  - /<first-path-segment>/images/SLICE325-Logo-1.png (repo-prefixed)
+    const logoFilename = 'images/SLICE325-Logo-1.png';
+    const baseEl = document.querySelector('base');
+    const baseHref = baseEl && baseEl.getAttribute('href') ? baseEl.getAttribute('href') : '';
+    const pathParts = window.location.pathname.split('/').filter(Boolean);
+    const repoBase = pathParts.length ? '/' + pathParts[0] : '';
+    const candidates = [
+        '/' + logoFilename,
+        logoFilename,
+        baseHref ? (baseHref.replace(/\/$/, '') + '/' + logoFilename) : null,
+        repoBase ? (repoBase.replace(/\/$/, '') + '/' + logoFilename) : null
+    ].filter(Boolean).map(p => p.replace(/\/\/+/g, '/'));
+
     const img = new Image();
     img.crossOrigin = 'anonymous';
-    img.src = logoPath;
+
+    // Attempt each candidate until one loads successfully, otherwise render without logo
+    let _tryIndex = 0;
+    function attemptNextLogo() {
+        if (_tryIndex >= candidates.length) {
+            console.warn('Logo not found at any candidate path, rendering without logo');
+            render(0);
+            return;
+        }
+        const src = candidates[_tryIndex++];
+        img.onload = function () {
+            try {
+                // place small logo at top-left for branding
+                const maxW = 50;
+                const pxToMm = 0.264583;
+                const drawW = Math.min(maxW, img.width * pxToMm);
+                const drawH = drawW * (img.height ? (img.height / img.width) : 0.3);
+                doc.addImage(img, 'PNG', 18, 16, drawW, drawH);
+
+                // subtle watermark: draw with low opacity by converting to canvas and reducing alpha
+                try {
+                    const canvas = document.createElement('canvas');
+                    canvas.width = img.width;
+                    canvas.height = img.height;
+                    const ctx = canvas.getContext('2d');
+                    ctx.globalAlpha = 0.08;
+                    ctx.drawImage(img, 0, 0);
+                    const dataURL = canvas.toDataURL('image/png');
+                    const wmW = 160;
+                    const wmH = wmW * (img.height / img.width || 0.3);
+                    const wmX = (297 - wmW) / 2;
+                    const wmY = 80;
+                    doc.addImage(dataURL, 'PNG', wmX, wmY, wmW, wmH);
+                } catch (e) {
+                    // ignore watermark if canvas fails
+                    console.warn('Watermark generation failed', e);
+                }
+
+                render(drawH + 6);
+            } catch (err) {
+                console.error('Logo drawing error', err);
+                render(0);
+            }
+        };
+        img.onerror = function () {
+            console.warn('Logo not found at', src, ' — trying next candidate');
+            // try the next candidate
+            attemptNextLogo();
+        };
+        // Start loading this candidate
+        img.src = src;
+    }
+
+    // Kick off the attempts
+    attemptNextLogo();
     function render(logoH = 0) {
         // Title
         const topY = 30 + logoH;
