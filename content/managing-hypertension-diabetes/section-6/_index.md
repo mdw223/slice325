@@ -5,7 +5,7 @@ pre = "i. "
 weight = 10
 +++
 
-![Checking blood glucose with a meeter.](/slice325/images/section-6/image-074.jpg)
+![Checking blood glucose with a meter.](/slice325/images/section-6/image-074.jpg)
 
 ## Overview of Medications
 
