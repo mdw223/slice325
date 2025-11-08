@@ -17,6 +17,7 @@
 
 ## Add a new course section
 
+- NOTE: Only the `content` and `static` folders are needed to add new course content. All content under the `public` folder is generated automatically by Hugo during the build process. Adding content to the `public` folder manually will be overwritten during the next build.
 - Create a new folder under `content/new-course/` add sections as needed.
 - Each section should have an `_index.md` file with the appropriate front matter.
 - Use existing sections as a reference for structure and formatting.
