@@ -1,8 +1,8 @@
 +++ 
 date = '2025-11-08T10:52:26-05:00' 
 title = 'Introduction' 
-pre = "c. " 
-weight = 4 
+pre = "<b>d.</b> " 
+weight = 5 
 +++
 # Section I: Introduction
 
@@ -39,4 +39,5 @@ These risk factors include:
 - Environmental hazards
 
 By addressing these risk factors through diet, exercise, and other lifestyle modifications, clients with hypertension and diabetes can reduce their risk of falls and improve their overall quality of life.
+
 
