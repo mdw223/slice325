@@ -1,41 +1,41 @@
 [
 {
-	"uri": "http://localhost:1313/basics/first-content/",
+	"uri": "https://example.org/basics/first-content/",
 	"title": "First Content",
 	"tags": [],
 	"description": "",
 	"content": "Chapter X Some Chapter title Lorem Ipsum.\n"
 },
 {
-	"uri": "http://localhost:1313/basics/",
+	"uri": "https://example.org/basics/",
 	"title": "Basics",
 	"tags": [],
 	"description": "",
 	"content": "Chapter X Some Chapter title Lorem Ipsum.\n"
 },
 {
-	"uri": "http://localhost:1313/basics/second-content/",
+	"uri": "https://example.org/basics/second-content/",
 	"title": "Second Content",
 	"tags": [],
 	"description": "",
 	"content": ""
 },
 {
-	"uri": "http://localhost:1313/",
+	"uri": "https://example.org/",
 	"title": "Slice325 Learn",
 	"tags": [],
 	"description": "",
 	"content": ""
 },
 {
-	"uri": "http://localhost:1313/categories/",
+	"uri": "https://example.org/categories/",
 	"title": "Categories",
 	"tags": [],
 	"description": "",
 	"content": ""
 },
 {
-	"uri": "http://localhost:1313/tags/",
+	"uri": "https://example.org/tags/",
 	"title": "Tags",
 	"tags": [],
 	"description": "",
