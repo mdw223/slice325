@@ -2,6 +2,10 @@ baseURL = '/'
 languageCode = 'en-us'
 title = 'Slice325 Learn'
 theme = "hugo-theme-learn"
+[params]
+  # Change default color scheme with a variant one. Can be "red", "blue", "green".
+  themeVariant = "red"
+
 # For search functionality
 [outputs]
 home = [ "HTML", "RSS", "JSON"]
