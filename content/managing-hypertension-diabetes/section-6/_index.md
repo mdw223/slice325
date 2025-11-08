@@ -1,8 +1,8 @@
 +++
 date = '2025-11-08T10:52:26-05:00'
 title = 'Medications for Hypertension and Diabetes'
-pre = "h. "
-weight = 9
+pre = "i. "
+weight = 10
 +++
 
 # Section VI: Medications for Hypertension and Diabetes

@@ -1,7 +1,7 @@
 +++ 
 date = '2025-11-08T10:52:26-05:00' 
 title = 'Understanding Hypertension and Diabetes' 
-pre = "<b>e.</b> " 
+pre = "e. " 
 weight = 6 
 +++
 # Section II: Understanding Hypertension and Diabetes
