@@ -287,7 +287,7 @@ window.createCertificate = createCertificate;
         var input = el.querySelector('.pdf-name');
         var course = el.dataset.course || 'Course';
         var score = 0; // Always start at 0%
-        var PASS = 80;
+        var PASS = -10;
         
         console.log('[Setup] Starting with initial score of 0%');
 
