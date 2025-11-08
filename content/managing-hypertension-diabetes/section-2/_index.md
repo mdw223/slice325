@@ -4,7 +4,6 @@ title = 'Understanding Hypertension and Diabetes'
 pre = "e. " 
 weight = 6 
 +++
-# Section II: Understanding Hypertension and Diabetes
 
 ## Definitions
 

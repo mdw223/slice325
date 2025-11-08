@@ -5,7 +5,6 @@ pre = "h. "
 weight = 9
 +++
 
-# Section V: Managing Hypertension and Diabetes through Lifestyle Changes
 
 ## Stress and Its Impact
 

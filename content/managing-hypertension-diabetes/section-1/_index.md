@@ -4,7 +4,6 @@ title = 'Introduction'
 pre = "d." 
 weight = 5 
 +++
-# Section I: Introduction
 
 ## Overview of the Course
 

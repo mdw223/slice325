@@ -5,7 +5,6 @@ pre = "i. "
 weight = 10
 +++
 
-# Section VI: Medications for Hypertension and Diabetes
 
 ## Overview of Medications
 

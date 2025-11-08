@@ -4,7 +4,6 @@ title = 'Nutrition and Diet for Hypertension and Diabetes'
 pre = "f. " 
 weight = 7 
 +++
-# Section III: Nutrition and Diet for Hypertension and Diabetes
 
 ## Nutrient Needs
 

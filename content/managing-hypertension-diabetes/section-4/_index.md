@@ -4,7 +4,6 @@ title = 'Preventing Falls in Clients with Hypertension and Diabetes'
 pre = "g. " 
 weight = 8 
 +++
-# Section IV: Preventing Falls in Clients with Hypertension and Diabetes
 
 ## Risk Factors for Falls
 
