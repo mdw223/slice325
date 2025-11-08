@@ -1,10 +1,5 @@
-+++ 
-date = '2025-11-08T10:52:20-05:00' 
-title = 'Managing Hypertension and Diabetes through Lifestyle Changes' 
-weight = 5 
-chapter = true 
-pre = "a. " 
-+++
++++ date = '2025-11-08T10:52:26-05:00' title = 'Managing Hypertension and Diabetes through Lifestyle Changes' pre = "h. " weight = 9 +++
+
 # Section V: Managing Hypertension and Diabetes through Lifestyle Changes
 
 ## Stress and Its Impact
@@ -81,6 +76,7 @@ Use methods such as:
 ### 7. Avoid Sleep Disruptors
 - Avoid caffeine and heavy meals close to bedtime
 - These can interfere with sleep quality
+
 
 
 
