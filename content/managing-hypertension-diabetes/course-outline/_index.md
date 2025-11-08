@@ -6,6 +6,8 @@ weight = 4
 +++
 ## COURSE OUTLINE
 
+![healthy salad spread out](/slice325/images/section-1/image-010.jpg)
+
 ### Section I: Introduction
 The course will cover various topics, including understanding hypertension and diabetes, nutrition and diet recommendations, fall prevention strategies, lifestyle changes, medications, and evaluation methods to ensure a comprehensive understanding of managing these conditions.
 
@@ -21,6 +23,7 @@ Hypertension, or high blood pressure, is a condition where the force of the bloo
 - Definitions
 - Causes and risk factors
 - Symptoms and complications
+![healthy salad spread out](/slice325/images/section-1/image-011.jpg)
 
 ### Section III: Nutrition and Diet for Hypertension and Diabetes
 A balanced diet plays a crucial role in managing hypertension and diabetes. For hypertension, reducing sodium intake and increasing potassium and fiber consumption can help control blood pressure. For diabetes, a focus on carbohydrates, fat, and protein management, along with meal planning and portion control, can help maintain blood glucose levels within a healthy range.
@@ -48,6 +51,7 @@ In addition to diet, lifestyle changes such as managing stress, quitting smoking
 - Quitting smoking and limiting alcohol
 - Sleep and its impact
 - Tips for managing stress and sleep habits
+![healthy salad spread out](/slice325/images/section-1/image-012.jpg)
 
 ### Section VI: Medications for Hypertension and Diabetes
 Various medications are available for managing hypertension and diabetes. Learning about potential side effects and interactions with diet and nutrition is essential for effective treatment. Regular monitoring of blood pressure and blood glucose levels is also crucial for maintaining optimal health.
