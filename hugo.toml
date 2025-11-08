@@ -4,7 +4,7 @@ title = 'Slice325 Learn'
 theme = "hugo-theme-learn"
 [params]
   # Change default color scheme with a variant one. Can be "red", "blue", "green".
-  themeVariant = "red"
+  themeVariant = "slice325"
   landingPageURL = '/slice325'
 
 # For search functionality
