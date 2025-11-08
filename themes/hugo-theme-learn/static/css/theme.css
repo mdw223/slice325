@@ -712,7 +712,7 @@ td {
     border: 1px solid #eaeaea;
 }
 .button {
-    background: #9c6fb6;
+    background: #B60708;
     color: #fff;
     box-shadow: 0 3px 0 #00a5d4;
 }
@@ -780,7 +780,7 @@ td {
     border-radius: 50%;
     color: #fff;
     font-size: 1.75rem;
-    text-align: center;
+    text-align: left;
 }
 .bullet-icon-1 {
     background: #9c6fb6;
