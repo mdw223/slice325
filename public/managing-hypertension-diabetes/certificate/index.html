@@ -9,7 +9,7 @@
 
     <link rel="icon" href="/images/favicon.png" type="image/png">
 
-    <title>Starter Quiz :: Slice325 Learn</title>
+    <title>Generate Certificate :: Slice325 Learn</title>
 
     
     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
@@ -59,7 +59,7 @@ src="https://cdn.jsdelivr.net/npm/quizdown@latest/public/build/extensions/quizdo
 </script>
 <script>quizdown.register(quizdownHighlight).register(quizdownKatex).init()</script> 
   </head>
-  <body class="" data-url="/managing-hypertension-diabetes/second-content/">
+  <body class="" data-url="/managing-hypertension-diabetes/certificate/">
     <nav id="sidebar" class="">
 
 
@@ -243,7 +243,7 @@ src="https://cdn.jsdelivr.net/npm/quizdown@latest/public/build/extensions/quizdo
  
   
     
-      <li data-nav-id="/managing-hypertension-diabetes/certificate/" title="Generate Certificate" class="dd-item ">
+      <li data-nav-id="/managing-hypertension-diabetes/certificate/" title="Generate Certificate" class="dd-item active">
         <a href="/managing-hypertension-diabetes/certificate/">
         Generate Certificate
         
@@ -292,7 +292,7 @@ src="https://cdn.jsdelivr.net/npm/quizdown@latest/public/build/extensions/quizdo
     
     <li data-nav-id="/managing-hypertension-diabetes/second-content/" title="Starter Quiz" class="dd-item
         
-        active
+        
         
         ">
       <a href="/managing-hypertension-diabetes/second-content/">
@@ -519,7 +519,7 @@ src="https://cdn.jsdelivr.net/npm/quizdown@latest/public/build/extensions/quizdo
             
           
           
-            <a href='/'>Slice325 Learn</a> > <a href='/managing-hypertension-diabetes/'>Managing Hypertension & Diabetes</a> > Starter Quiz
+            <a href='/'>Slice325 Learn</a> > <a href='/managing-hypertension-diabetes/'>Managing Hypertension & Diabetes</a> > Generate Certificate
           
         
           
@@ -548,58 +548,52 @@ src="https://cdn.jsdelivr.net/npm/quizdown@latest/public/build/extensions/quizdo
           
             <h1>
               
-              Starter Quiz
+              Generate Certificate
             </h1>
           
 
         
 
 
-
-	<h1 id="hugo-quiz">Hugo Quiz</h1>
-
-<div class='quizdown'>
-  
-
----
-primary_color: orange
-secondary_color: lightgray
-text_color: black
-shuffle_questions: false
----
-
-## The sound of dog
-
----
-shuffle_answers: false
----
-
-What do dogs sound like?
-
-> Some hint
-
-- [ ] yes
-- [ ] no
-- [ ] `self.sound = "meow"`
-- [x] wuff
-
-## Put the [days](https://en.wikipedia.org/wiki/Day) in order!
-
-> Monday is the *first* day of the week.
-
-1. Monday
-2. Tuesday
-3. Wednesday
-4. Friday
-5. Saturday  
-
+<p>Click the button below to generate a sample certificate</p>
+<div class="pdf-button-shortcode">
+  <button class="pdf-generate" 
+    data-name="John Doe" 
+    data-course="Managing Hypertension and Diabetes" 
+    data-score="92"
+    style="padding: 10px 18px; background-color:#007bff; color:#fff; border:none; border-radius:4px; cursor:pointer; font-size:14px;">
+    Generate Certificate
+  </button>
 </div>
 
+<script>
+(function () {
+  
+  
+  setTimeout(function () {
+    var buttons = document.querySelectorAll('.pdf-button-shortcode .pdf-generate');
+    buttons.forEach(function (btn) {
+      
+      if (btn.dataset.pdfHandlerAttached) return;
+      btn.addEventListener('click', function (e) {
+        var name = btn.getAttribute('data-name') || 'John Doe';
+        var course = btn.getAttribute('data-course') || 'Course Name';
+        var score = btn.getAttribute('data-score') || '100';
+        if (typeof window.createCertificate === 'function') {
+          window.createCertificate(name, course, score);
+        } else {
+          console.error('createCertificate is not available. Make sure js/pdf-utils.js is loaded.');
+        }
+      });
+      btn.dataset.pdfHandlerAttached = '1';
+    });
+  }, 0);
+})();
+</script>
 
 
 
-
-<footer class=" footline" >
+<footer class="footline">
 	
 </footer>
 
@@ -669,6 +663,26 @@ What do dogs sound like?
             
                 
                     
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                        
+                        
+                    
                 
                 
 
@@ -700,26 +714,6 @@ What do dogs sound like?
             
             
                 
-                    
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-            
-        
-                    
-                        
-            
-            
-                
-                    
-                        
-                        
                     
                 
                 
@@ -824,10 +818,10 @@ What do dogs sound like?
 	 
 	 
 		
-			<a class="nav nav-prev" href="/managing-hypertension-diabetes/section-7/" title="Diabetes Knowledge Post-Assessment"> <i class="fa fa-chevron-left"></i></a>
+			<a class="nav nav-prev" href="/managing-hypertension-diabetes/first-content/" title="Course Objectives"> <i class="fa fa-chevron-left"></i></a>
 		
 		
-			<a class="nav nav-next" href="/managing-hypertension-diabetes/section-1/" title="" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
+			<a class="nav nav-next" href="/managing-hypertension-diabetes/section-7/" title="Diabetes Knowledge Post-Assessment" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
 		
 	
     </div>
@@ -859,3 +853,4 @@ What do dogs sound like?
 
   </body>
 </html>
+
