@@ -1180,6 +1180,18 @@ option {
   position: relative;
 }
 
+.card-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  transition: transform 0.3s ease;
+}
+
+.card-image:hover {
+  transform: scale(1.05);
+}
+
 .card-content {
   padding: 1.25rem;
 }

@@ -4,76 +4,209 @@ function createCertificate(name, course, score, filename = 'certificate.pdf') {
         console.error('jsPDF not loaded');
         return;
     }
-    // Create PDF in landscape orientation
-    const doc = new jsPDF({
-        orientation: 'landscape',
-        unit: 'mm',
-        format: 'a4'
-    });
-    
-    // Set background color
-    doc.setFillColor(247, 247, 247);
-    doc.rect(0, 0, 297, 210, 'F');
-    
-    // Add decorative border
-    doc.setDrawColor(44, 62, 80);
-    doc.setLineWidth(2);
-    doc.rect(10, 10, 277, 190);
-    doc.setLineWidth(0.5);
-    doc.rect(12, 12, 273, 186);
-    
-    // Add header text
-    doc.setFont('helvetica', 'bold');
-    doc.setFontSize(40);
-    doc.setTextColor(44, 62, 80);
-    doc.text('Certificate of Completion', 148.5, 40, { align: 'center' });
-    
-    // Add decoration line
-    doc.setLineWidth(1);
-    doc.line(74, 45, 223, 45);
-    
-    // Add main text
-    doc.setFontSize(20);
-    doc.setFont('helvetica', 'normal');
-    doc.text('This is to certify that', 148.5, 70, { align: 'center' });
-    
-    // Add name
-    doc.setFontSize(32);
-    doc.setFont('helvetica', 'bold');
-    doc.setTextColor(0, 102, 204);
-    doc.text(String(name), 148.5, 90, { align: 'center' });
-    
-    // Add course details
-    doc.setFontSize(20);
-    doc.setFont('helvetica', 'normal');
-    doc.setTextColor(44, 62, 80);
-    doc.text('has successfully completed the course', 148.5, 110, { align: 'center' });
-    
-    // Add course name
-    doc.setFontSize(28);
-    doc.setFont('helvetica', 'bold');
-    doc.text(String(course), 148.5, 130, { align: 'center' });
-    
-    // Add score
-    doc.setFontSize(20);
-    doc.setFont('helvetica', 'normal');
-    doc.text('with a score of', 148.5, 150, { align: 'center' });
-    doc.setFontSize(28);
-    doc.setFont('helvetica', 'bold');
-    doc.setTextColor(0, 102, 204);
-    doc.text(String(score) + '%', 148.5, 170, { align: 'center' });
-    
-    // Add date with specific format
-    doc.setFontSize(12);
-    doc.setFont('helvetica', 'normal');
-    doc.setTextColor(44, 62, 80);
-    const now = new Date();
-    const date = `${now.getMonth() + 1}/${now.getDate()}/${now.getFullYear()}`; // MM/DD/YYYY format
-    console.log('[Certificate] Generated on:', date);
-    doc.text(date, 148.5, 185, { align: 'center' });
-    
-    // Save the PDF
-    doc.save(filename);
+
+    // Normalize inputs
+    name = String(name || 'Participant');
+    course = String(course || 'Course');
+    score = (typeof score === 'number' && !isNaN(score)) ? Math.round(score) : 0;
+
+    // Create PDF
+    const doc = new jsPDF({ orientation: 'landscape', unit: 'mm', format: 'a4' });
+
+    // Color palette (use a red accent to match logo)
+    const red = [200, 0, 0]; // warm red
+    const border = [60, 60, 60];
+    const bg = [255, 255, 255];
+
+    // Logo image (from static/images)
+    // Try multiple candidate paths so the image loads correctly on GitHub Pages
+    // (site may be served from a subpath like /repo-name/). We'll attempt:
+    //  - /images/SLICE325-Logo-1.png
+    //  - images/SLICE325-Logo-1.png (relative)
+    //  - <base href> + images/SLICE325-Logo-1.png
+    //  - /<first-path-segment>/images/SLICE325-Logo-1.png (repo-prefixed)
+    const logoFilename = 'images/SLICE325-Logo-1.png';
+    const baseEl = document.querySelector('base');
+    const baseHref = baseEl && baseEl.getAttribute('href') ? baseEl.getAttribute('href') : '';
+    const pathParts = window.location.pathname.split('/').filter(Boolean);
+    const repoBase = pathParts.length ? '/' + pathParts[0] : '';
+    const candidates = [
+        '/' + logoFilename,
+        logoFilename,
+        baseHref ? (baseHref.replace(/\/$/, '') + '/' + logoFilename) : null,
+        repoBase ? (repoBase.replace(/\/$/, '') + '/' + logoFilename) : null
+    ].filter(Boolean).map(p => p.replace(/\/\/+/g, '/'));
+
+    const img = new Image();
+    img.crossOrigin = 'anonymous';
+
+    // Attempt each candidate until one loads successfully, otherwise render without logo
+    let _tryIndex = 0;
+    function attemptNextLogo() {
+        if (_tryIndex >= candidates.length) {
+            console.warn('Logo not found at any candidate path, rendering without logo');
+            render(0);
+            return;
+        }
+        const src = candidates[_tryIndex++];
+        img.onload = function () {
+            try {
+                // place small logo at top-left for branding
+                const maxW = 50;
+                const pxToMm = 0.264583;
+                const drawW = Math.min(maxW, img.width * pxToMm);
+                const drawH = drawW * (img.height ? (img.height / img.width) : 0.3);
+                doc.addImage(img, 'PNG', 18, 16, drawW, drawH);
+
+                // subtle watermark: draw with low opacity by converting to canvas and reducing alpha
+                try {
+                    const canvas = document.createElement('canvas');
+                    canvas.width = img.width;
+                    canvas.height = img.height;
+                    const ctx = canvas.getContext('2d');
+                    ctx.globalAlpha = 0.08;
+                    ctx.drawImage(img, 0, 0);
+                    const dataURL = canvas.toDataURL('image/png');
+                    const wmW = 160;
+                    const wmH = wmW * (img.height / img.width || 0.3);
+                    const wmX = (297 - wmW) / 2;
+                    const wmY = 80;
+                    doc.addImage(dataURL, 'PNG', wmX, wmY, wmW, wmH);
+                } catch (e) {
+                    // ignore watermark if canvas fails
+                    console.warn('Watermark generation failed', e);
+                }
+
+                render(drawH + 6);
+            } catch (err) {
+                console.error('Logo drawing error', err);
+                render(0);
+            }
+        };
+        img.onerror = function () {
+            console.warn('Logo not found at', src, ' — trying next candidate');
+            // try the next candidate
+            attemptNextLogo();
+        };
+        // Start loading this candidate
+        img.src = src;
+    }
+
+    // Kick off the attempts
+    attemptNextLogo();
+    function render(logoH = 0) {
+        // Title
+        const topY = 30 + logoH;
+        doc.setFont('times', 'normal');
+        doc.setFontSize(28);
+        doc.setTextColor(...border);
+        doc.setFontSize(28);
+        doc.text('Certificate of Completion', 148.5, topY, { align: 'center' });
+
+        // Subtitle line (bolder)
+        doc.setLineWidth(1.0);
+        doc.setDrawColor(...red);
+        doc.line(72, topY + 6, 224, topY + 6);
+
+        // Body
+        let y = topY + 26;
+        doc.setFontSize(16);
+        doc.setTextColor(70, 70, 70);
+        doc.text('This certifies that', 148.5, y, { align: 'center' });
+
+        // Fancy name in larger, cursive-like style (use Times Italic as fallback)
+        y += 20;
+        doc.setFont('times', 'italic');
+        doc.setFontSize(48);
+        // Stronger shadow for depth
+        doc.setTextColor(140, 0, 0);
+        doc.text(name, 148.8, y + 0.8, { align: 'center' });
+        doc.setTextColor(...red);
+        doc.text(name, 148.5, y, { align: 'center' });
+
+        // Course info
+        y += 28;
+        doc.setFont('times', 'normal');
+        doc.setFontSize(16);
+        doc.setTextColor(80, 80, 80);
+        doc.text('has successfully completed the course', 148.5, y, { align: 'center' });
+
+        y += 18;
+        doc.setFontSize(22);
+        doc.setFont('times', 'bold');
+        doc.setTextColor(...border);
+        doc.text(course, 148.5, y, { align: 'center' });
+
+        // Score badge (more prominent)
+        y += 28;
+        const badgeW = 96;
+        const badgeH = 26;
+        const bx = 148.5 - badgeW / 2;
+        doc.setDrawColor(...red);
+        doc.setFillColor(...red);
+        // filled rounded rect
+        try {
+            doc.roundedRect(bx, y - 14, badgeW, badgeH, 4, 4, 'F');
+        } catch (e) {
+            // Fallback to normal rect if roundedRect not available
+            doc.rect(bx, y - 14, badgeW, badgeH, 'F');
+        }
+        doc.setFontSize(16);
+        doc.setTextColor(255, 255, 255);
+        doc.setFont('times', 'bold');
+        doc.text('Score: ' + String(score) + '%', 148.5, y + 2, { align: 'center' });
+
+        // Date bottom-left (bolder)
+        const now = new Date();
+        const dateStr = `${now.getMonth() + 1}/${now.getDate()}/${now.getFullYear()}`;
+        doc.setFontSize(12);
+        doc.setFont('times', 'normal');
+        doc.setTextColor(80, 80, 80);
+        doc.text(dateStr, 30, 188);
+
+        // Save
+        doc.save(filename);
+    }
+
+    img.onload = function () {
+        try {
+            // place small logo at top-left for branding
+            const maxW = 50;
+            const pxToMm = 0.264583;
+            const drawW = Math.min(maxW, img.width * pxToMm);
+            const drawH = drawW * (img.height ? (img.height / img.width) : 0.3);
+            doc.addImage(img, 'PNG', 18, 16, drawW, drawH);
+
+            // subtle watermark: draw with low opacity by converting to canvas and reducing alpha
+            try {
+                const canvas = document.createElement('canvas');
+                canvas.width = img.width;
+                canvas.height = img.height;
+                const ctx = canvas.getContext('2d');
+                ctx.globalAlpha = 0.08;
+                ctx.drawImage(img, 0, 0);
+                const dataURL = canvas.toDataURL('image/png');
+                const wmW = 160;
+                const wmH = wmW * (img.height / img.width || 0.3);
+                const wmX = (297 - wmW) / 2;
+                const wmY = 80;
+                doc.addImage(dataURL, 'PNG', wmX, wmY, wmW, wmH);
+            } catch (e) {
+                // ignore watermark if canvas fails
+                console.warn('Watermark generation failed', e);
+            }
+
+            render(drawH + 6);
+        } catch (err) {
+            console.error('Logo drawing error', err);
+            render(0);
+        }
+    };
+
+    img.onerror = function () {
+        console.warn('Logo not found, rendering without logo');
+        render(0);
+    };
 }
 
 // Expose functions for inline onclick handlers
@@ -154,7 +287,7 @@ window.createCertificate = createCertificate;
         var input = el.querySelector('.pdf-name');
         var course = el.dataset.course || 'Course';
         var score = 0; // Always start at 0%
-        var PASS = 80;
+        var PASS = -10;
         
         console.log('[Setup] Starting with initial score of 0%');
 
@@ -195,7 +328,8 @@ window.createCertificate = createCertificate;
     }
 
     function initAll() {
-        var nodes = document.querySelectorAll('.pdf-button-shortcode');
+        // Support both the legacy shortcode wrapper class and the newer certificate-generator
+        var nodes = document.querySelectorAll('.pdf-button-shortcode, .certificate-generator');
         nodes.forEach(setupShortcode);
     }
 
