@@ -1,3 +1,4 @@
++++ date = '2025-11-08T10:52:26-05:00' title = 'Preventing Falls in Clients with Hypertension and Diabetes' pre = "f. " weight = 7 +++
 # Section IV: Preventing Falls in Clients with Hypertension and Diabetes
 
 ## Risk Factors for Falls
@@ -77,3 +78,4 @@ Fall prevention strategies for clients with hypertension and diabetes involve a 
 6. **Use assistive devices:** Consider canes or walkers if needed for improved stability
 
 7. **Join a program:** Participate in a fall prevention program led by a physical therapist or other qualified professional
+
