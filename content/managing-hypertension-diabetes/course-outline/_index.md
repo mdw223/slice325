@@ -1,3 +1,10 @@
++++ 
+date = '2025-11-08T10:52:26-05:00' 
+title = 'Course Outline' 
+pre = "<b>d.</b> " 
+weight = 5 
++++
+
 ## COURSE OUTLINE
 
 ### Section I: Introduction
