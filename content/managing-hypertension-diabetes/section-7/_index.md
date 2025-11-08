@@ -20,7 +20,7 @@ shuffleAnswers: true
 1. [ ] Eating fast foods and processed foods  
 1. [ ] I do not know  
 
-### Diabetes affects what organ?
+<!-- ### Diabetes affects what organ?
 > Hint: This organ produces insulin.
 
 1. [ ] Intestines  
@@ -99,7 +99,7 @@ shuffleAnswers: true
 1. [x] Helps lower blood sugar levels  
 1. [ ] Only counts when you exercise for at least 30 minutes at one time  
 1. [ ] Must hurt in order to be beneficial  
-1. [ ] I do not know
+1. [ ] I do not know -->
 {{< /quizdown >}}
 
 {{< pdf-button course="Managing Hypertension and Diabetes" >}}
