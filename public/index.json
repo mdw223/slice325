@@ -1,10 +1,24 @@
 [
 {
+	"uri": "http://localhost:1313/basics/first-content/",
+	"title": "First Content",
+	"tags": [],
+	"description": "",
+	"content": "Chapter X Some Chapter title Lorem Ipsum.\n"
+},
+{
 	"uri": "http://localhost:1313/basics/",
 	"title": "Basics",
 	"tags": [],
 	"description": "",
 	"content": "Chapter X Some Chapter title Lorem Ipsum.\n"
+},
+{
+	"uri": "http://localhost:1313/basics/second-content/",
+	"title": "Second Content",
+	"tags": [],
+	"description": "",
+	"content": ""
 },
 {
 	"uri": "http://localhost:1313/",

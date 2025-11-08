@@ -6,7 +6,14 @@
     <description>Recent content in Basics on Slice325 Learn</description>
     <generator>Hugo</generator>
     <language>en-us</language>
-    <lastBuildDate></lastBuildDate>
+    <lastBuildDate>Sat, 08 Nov 2025 10:52:20 -0500</lastBuildDate>
     <atom:link href="http://localhost:1313/basics/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>First Content</title>
+      <link>http://localhost:1313/basics/first-content/</link>
+      <pubDate>Sat, 08 Nov 2025 10:52:20 -0500</pubDate>
+      <guid>http://localhost:1313/basics/first-content/</guid>
+      <description>&lt;h3 id=&#34;chapter-x&#34;&gt;Chapter X&lt;/h3&gt;&#xA;&lt;h1 id=&#34;some-chapter-title&#34;&gt;Some Chapter title&lt;/h1&gt;&#xA;&lt;p&gt;Lorem Ipsum.&lt;/p&gt;</description>
+    </item>
   </channel>
 </rss>
