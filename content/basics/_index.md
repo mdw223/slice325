@@ -8,6 +8,6 @@ pre = "<b>X. </b>"
 
 ### Chapter 1
 
-# Managing Hypertension: Through Diet and Nutrition
+# Managing Hypertension & Diabetes: Through Diet and Nutrition
 
-Lorem Ipsum.
+PREVENTING FALLS
