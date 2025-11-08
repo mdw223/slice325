@@ -1,5 +1,7 @@
 ## COURSE OUTLINE
 
+![Alt text](Managing Hypertension & Diabetes  Preventing Falls Course.pdf-image-009.jpg)
+
 ### Section I: Introduction
 The course will cover various topics, including understanding hypertension and diabetes, nutrition and diet recommendations, fall prevention strategies, lifestyle changes, medications, and evaluation methods to ensure a comprehensive understanding of managing these conditions.
 
