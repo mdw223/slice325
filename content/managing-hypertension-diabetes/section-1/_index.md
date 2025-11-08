@@ -25,7 +25,7 @@ weight = 5
 - Furthermore, certain nutrients, such as sodium, potassium, and fiber, are particularly important for managing hypertension, while the balance of carbohydrates, fats, and proteins is crucial for diabetes management.
 
 - Implementing healthy dietary habits can significantly improve overall health and reduce the risk of falls in clients with hypertension and diabetes.
-![people having healthy lunch](/slice325/images/section-1/image-023.jpg)
+![people having healthy lunch](/slice325/images/section-1/image-024.jpg)
 ---
 
 ## Risk Factors for Falls
@@ -41,4 +41,5 @@ These risk factors include:
 - Environmental hazards
 
 By addressing these risk factors through diet, exercise, and other lifestyle modifications, clients with hypertension and diabetes can reduce their risk of falls and improve their overall quality of life.
-![healthy salad](/slice325/images/section-1/image-024.jpg)
+![healthy salad](/slice325/images/section-1/image-026.jpg)
+
