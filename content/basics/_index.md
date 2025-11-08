@@ -6,8 +6,8 @@ chapter = true
 pre = "<b>X. </b>"
 +++
 
-### Chapter X
+### Chapter 1
 
-# Through Diet and Nutrition
+# Managing Hypertension: Through Diet and Nutrition
 
 Lorem Ipsum.
