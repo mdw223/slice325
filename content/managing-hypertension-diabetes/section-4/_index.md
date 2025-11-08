@@ -5,7 +5,7 @@ pre = "g. "
 weight = 8 
 +++
 
-![test](/slice325/images/image-020.jpg)
+![A man running on the beach.](/slice325/images/section-4/image-047.jpg)
 
 ## Risk Factors for Falls
 
@@ -29,6 +29,8 @@ Clutter, poor lighting, loose rugs, and other home hazards
 ---
 
 ## Importance of Physical Activity
+
+![A man performing yoga poses.](/slice325/images/section-4/image-053.jpg)
 
 - Regular physical activity is crucial for preventing falls in clients with hypertension and diabetes.
 

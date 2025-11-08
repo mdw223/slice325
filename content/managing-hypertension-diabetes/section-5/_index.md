@@ -8,6 +8,8 @@ weight = 9
 
 ## Stress and Its Impact
 
+![A womman anxiously working at the computer.](/slice325/images/section-5/image-058.jpg)
+
 - Stress can have a significant impact on both hypertension and diabetes.
 
 - **Impact on blood pressure:** Chronic stress can cause blood pressure to rise, increasing the risk of heart attack, stroke, and other complications.
@@ -21,6 +23,8 @@ weight = 9
 ---
 
 ## Quitting Smoking and Limiting Alcohol
+
+![A womman anxiously working at the computer.](/slice325/images/section-5/image-062.jpg)
 
 ### Quitting Smoking
 Quitting smoking is crucial for managing hypertension and diabetes because:
@@ -40,6 +44,8 @@ Limiting alcohol is important because:
 ---
 
 ## Sleep and Its Impact
+
+![A couple sleeping in bed.](/slice325/images/section-5/image-062.jpg)
 
 - Sleep plays a critical role in managing hypertension and diabetes.
 

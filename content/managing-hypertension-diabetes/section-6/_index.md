@@ -5,6 +5,7 @@ pre = "i. "
 weight = 10
 +++
 
+![Checking blood glucose with a meeter.](/slice325/images/section-5/image-074.jpg)
 
 ## Overview of Medications
 
@@ -33,6 +34,8 @@ Various medications are available to help manage hypertension and diabetes.
 ---
 
 ## Side Effects and Interactions
+
+![A care giver taking blood pressure readings.](/slice325/images/section-5/image-070.jpg)
 
 - Medications for hypertension and diabetes can have potential side effects and may interact with other medications, supplements, or certain foods.
 
