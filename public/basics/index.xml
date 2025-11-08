@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Basics on Slice325 Learn</title>
-    <link>//mdw223.github.io/slice325/basics/</link>
+    <link>/basics/</link>
     <description>Recent content in Basics on Slice325 Learn</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Sat, 08 Nov 2025 10:52:20 -0500</lastBuildDate>
-    <atom:link href="//mdw223.github.io/slice325/basics/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="/basics/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>First Content</title>
-      <link>//mdw223.github.io/slice325/basics/first-content/</link>
+      <link>/basics/first-content/</link>
       <pubDate>Sat, 08 Nov 2025 10:52:20 -0500</pubDate>
-      <guid>//mdw223.github.io/slice325/basics/first-content/</guid>
+      <guid>/basics/first-content/</guid>
       <description>&lt;h3 id=&#34;chapter-x&#34;&gt;Chapter X&lt;/h3&gt;&#xA;&lt;h1 id=&#34;some-chapter-title&#34;&gt;Some Chapter title&lt;/h1&gt;&#xA;&lt;p&gt;Lorem Ipsum.&lt;/p&gt;</description>
     </item>
   </channel>

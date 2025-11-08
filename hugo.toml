@@ -1,4 +1,4 @@
-baseURL = '//mdw223.github.io/slice325/'
+baseURL = '/'
 languageCode = 'en-us'
 title = 'Slice325 Learn'
 theme = "hugo-theme-learn"
