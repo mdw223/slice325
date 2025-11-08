@@ -1,4 +1,9 @@
-+++ date = '2025-11-08T10:52:26-05:00' title = 'Preventing Falls in Clients with Hypertension and Diabetes' pre = "f. " weight = 7 +++
++++ 
+date = '2025-11-08T10:52:26-05:00' 
+title = 'Preventing Falls in Clients with Hypertension and Diabetes' 
+pre = "f. " 
+weight = 7 
++++
 # Section IV: Preventing Falls in Clients with Hypertension and Diabetes
 
 ## Risk Factors for Falls

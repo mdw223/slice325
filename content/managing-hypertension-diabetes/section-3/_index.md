@@ -1,4 +1,9 @@
-+++ date = '2025-11-08T10:52:26-05:00' title = 'Nutrition and Diet for Hypertension and Diabetes' pre = "e. " weight = 6 +++
++++ 
+date = '2025-11-08T10:52:26-05:00' 
+title = 'Nutrition and Diet for Hypertension and Diabetes' 
+pre = "e. " 
+weight = 6 
++++
 # Section III: Nutrition and Diet for Hypertension and Diabetes
 
 ## Nutrient Needs

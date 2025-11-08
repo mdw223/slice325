@@ -1,4 +1,9 @@
-+++ date = '2025-11-08T10:52:26-05:00' title = 'Introduction' pre = "c. " weight = 4 +++
++++ 
+date = '2025-11-08T10:52:26-05:00' 
+title = 'Introduction' 
+pre = "c. " 
+weight = 4 
++++
 # Section I: Introduction
 
 ## Overview of the Course
