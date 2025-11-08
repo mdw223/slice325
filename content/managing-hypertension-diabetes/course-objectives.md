@@ -3,7 +3,7 @@ date = '2025-11-08T10:52:20-05:00'
 title = 'Course Objectives'
 weight = 2
 chapter = true
-pre = "<b>a. </b>"
+pre = "a. "
 +++
 
 ## Course Objectives

@@ -1,7 +1,7 @@
 +++
 date = '2025-11-08T10:52:26-05:00'
 title = 'Starter Quiz'
-pre = "<b>b. </b>"
+pre = "b. "
 weight = 3
 +++
 
