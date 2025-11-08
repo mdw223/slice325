@@ -49,7 +49,7 @@ jobs:
       - name: Build with Hugo
         env:
           HUGO_ENV: production
-          HUGO_BASEURL: "https://github.com/mdw223/slice325.git/"
+          HUGO_BASEURL: "https://github.com/mdw223/slice325/"
         run: |
           hugo --gc --minify --baseURL "${{ steps.pages.outputs.base_url }}/"
       
