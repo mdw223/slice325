@@ -1,3 +1,17 @@
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+<script>
+	// Expose the jsPDF constructor when the UMD bundle is available.
+	if (window.jspdf && window.jspdf.jsPDF) {
+		window.jsPDF = window.jspdf.jsPDF;
+	} else {
+		window.addEventListener('load', function () {
+			if (window.jspdf && window.jspdf.jsPDF) {
+				window.jsPDF = window.jspdf.jsPDF;
+			}
+		});
+	}
+</script>
+
 <script 
 src="https://cdn.jsdelivr.net/npm/quizdown@latest/public/build/quizdown.js">
 </script>
