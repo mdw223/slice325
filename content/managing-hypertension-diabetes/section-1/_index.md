@@ -40,3 +40,5 @@ These risk factors include:
 By addressing these risk factors through diet, exercise, and other lifestyle modifications, clients with hypertension and diabetes can reduce their risk of falls and improve their overall quality of life.
 
 
+
+
