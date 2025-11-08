@@ -1,4 +1,5 @@
-+++ date = '2025-11-08T10:52:26-05:00' title = 'Course Outlines' pre = "<b>c.</b>" weight = 4 +++## COURSE OUTLINE
++++ date = '2025-11-08T10:52:26-05:00' title = 'Course Outlines' pre = "<b>c.</b>" weight = 4 +++
+## COURSE OUTLINE
 
 ![Alt text](Managing Hypertension & Diabetes  Preventing Falls Course.pdf-image-009.jpg)
 
