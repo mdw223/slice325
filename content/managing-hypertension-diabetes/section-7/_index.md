@@ -5,7 +5,7 @@ title = 'Diabetes Knowledge Post-Assessment'
 
 {{< quizdown >}}
 ---
-primaryColor: steelblue
+primaryColor: steelBlue
 shuffleQuestions: false
 shuffleAnswers: true
 ---
@@ -101,3 +101,4 @@ shuffleAnswers: true
 1. [ ] Must hurt in order to be beneficial  
 1. [ ] I do not know
 {{< /quizdown >}}
+
