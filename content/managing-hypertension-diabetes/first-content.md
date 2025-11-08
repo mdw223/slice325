@@ -3,7 +3,7 @@ date = '2025-11-08T10:52:20-05:00'
 title = 'Course Objectives'
 weight = 5
 chapter = true
-pre = "<b>X. </b>"
+pre = "<b>a. </b>"
 +++
 
 ![logo](https://github.com/mdw223/slice325/blob/main/themes/hugo-theme-learn/static/images/SLICE325-Logo-1.png)
