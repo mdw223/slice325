@@ -11,4 +11,4 @@ pre = "<b>X. </b>"
 # Managing Hypertension & Diabetes: Through Diet and Nutrition
 
 PREVENTING FALLS
-![healthy saladd](/slice325/images/section-1/image-020.jpg)
+![healthy salad](/slice325/images/section-1/image-020.jpg)
