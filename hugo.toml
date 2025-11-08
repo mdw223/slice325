@@ -7,3 +7,8 @@ theme = "hugo-theme-learn"
 home = [ "HTML", "RSS", "JSON"]
 [minify]
   disableHTML = true
+
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true
