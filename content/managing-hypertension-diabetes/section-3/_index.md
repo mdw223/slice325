@@ -1,82 +1,71 @@
-# Section II: Understanding Hypertension and Diabetes
+# Section III: Nutrition and Diet for Hypertension and Diabetes
 
-## Definitions
+## Nutrient Needs
 
-### Hypertension
-Hypertension, or high blood pressure, is a condition where the force of the blood against the walls of the arteries is consistently too high.
+- Individuals with hypertension and diabetes have specific nutrient needs to help manage their conditions.
 
-- **Normal blood pressure** is generally considered to be 120/80 mm Hg or below
-- **Hypertension** is typically defined as a blood pressure of 130/80 mm Hg or higher
+- **For hypertension:** Reducing sodium intake and increasing potassium and fiber consumption can help control blood pressure.
 
-### Diabetes
-Diabetes is a chronic disease characterized by high blood glucose levels. There are two main types of diabetes:
-
-- **Type 1 diabetes** is an autoimmune condition where the body's immune system destroys the insulin-producing cells in the pancreas.
-
-- **Type 2 diabetes** occurs when the body either doesn't produce enough insulin or can't use it effectively.
+- **For diabetes:** It is crucial to balance the intake of carbohydrates, fats, and proteins to maintain blood glucose levels within a healthy range.
 
 ---
 
-## Causes & Risk Factors
+## Sodium, Potassium & Fiber
 
-### Hypertension
-Hypertension can be caused by a variety of factors, including:
-- Genetics
-- Age
-- Obesity
-- Physical inactivity
-- Excessive alcohol consumption
-- Smoking
-- High sodium intake
-- Certain medical conditions such as kidney disease
+### Sodium
+For hypertension management, it's essential to limit sodium intake to **less than 2,300 mg per day** or even lower, as recommended by a healthcare professional.
 
-### Diabetes
-Diabetes risk factors vary depending on the type.
+### Potassium
+Consuming potassium-rich foods can help counteract the effects of sodium and support healthy blood pressure levels.
 
-**Type 1 diabetes** is primarily influenced by:
-- Genetic factors
-- Environmental factors
+**Potassium-rich foods include:**
+- Bananas
+- Sweet potatoes
+- Leafy greens
 
-**Type 2 diabetes** risk factors include:
-- Obesity
-- Physical inactivity
-- Age
-- Family history
-- High blood pressure
-- Ethnicity
+### Fiber
+Increasing fiber intake can contribute to better blood pressure management.
 
-Additionally, certain medical conditions, such as polycystic ovary syndrome (PCOS) and prediabetes, can increase the risk of developing Type 2 diabetes.
+**High-fiber foods include:**
+- Whole grains
+- Fruits
+- Vegetables
+- Legumes
 
 ---
 
-## Symptoms & Complications
+## Carbohydrates, Fat, and Protein
 
-### Hypertension Symptoms
-- Hypertension often has no noticeable symptoms, which is why it's sometimes called the "silent killer."
+For individuals with diabetes, it is essential to manage the intake of carbohydrates, fats, and proteins.
 
-- Uncontrolled hypertension can lead to severe complications, including:
-  - Heart attack
-  - Stroke
-  - Kidney disease
-  - Vision problems
+### Carbohydrates
+- Carbohydrates have the most significant impact on blood glucose levels
+- It's crucial to choose high-quality, complex carbohydrates like whole grains, fruits, and vegetables
+- Monitor portion sizes carefully
 
-### Diabetes Symptoms
-Diabetes symptoms may include:
-- Increased thirst
-- Frequent urination
-- Extreme hunger
-- Unexplained weight loss
-- Fatigue
-- Irritability
-- Blurry vision
-- Slow-healing sores
-- Frequent infections
+### Healthy Fats
+- Consuming healthy fats, such as those found in nuts, seeds, and avocados, can help regulate blood glucose levels and support heart health
 
-### Diabetes Complications
-If left unmanaged, diabetes can lead to complications such as:
-- Heart disease
-- Stroke
-- Kidney disease
-- Nerve damage
-- Foot problems
-- Vision problems
+### Protein
+- Protein is essential for overall health
+- Should come from lean sources like:
+  - Poultry
+  - Fish
+  - Beans
+  - Low-fat dairy
+
+---
+
+## Meal Planning and Portion Control
+
+Meal planning and portion control are essential components of managing hypertension and diabetes through diet. Consistent meal timing and balancing macronutrients can help stabilize blood glucose levels and maintain healthy blood pressure.
+
+### The Plate Method
+Using the "plate method" can help individuals manage portion sizes and maintain a balanced diet:
+
+- **Half the plate:** Non-starchy vegetables
+- **One-quarter:** Lean protein
+- **One-quarter:** Whole grains or starchy vegetables
+
+### Professional Guidance
+It's essential to consult with a healthcare professional or registered dietitian for personalized meal planning and nutrition advice.
