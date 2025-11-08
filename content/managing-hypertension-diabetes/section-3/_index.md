@@ -36,7 +36,7 @@ Increasing fiber intake can contribute to better blood pressure management.
 - Fruits
 - Vegetables
 - Legumes
-![fruit salad](/slice325/images/section-3/image-036.jpg)
+![woman eating salad](/slice325/images/section-3/image-036.jpg)
 ---
 
 ## Carbohydrates, Fat, and Protein
@@ -58,7 +58,7 @@ For individuals with diabetes, it is essential to manage the intake of carbohydr
   - Fish
   - Beans
   - Low-fat dairy
-![fruit salad](/slice325/images/section-3/image-037.jpg)
+![banana](/slice325/images/section-3/image-037.jpg)
 ---
 
 ## Meal Planning and Portion Control
@@ -74,6 +74,7 @@ Using the "plate method" can help individuals manage portion sizes and maintain 
 
 ### Professional Guidance
 It's essential to consult with a healthcare professional or registered dietitian for personalized meal planning and nutrition advice.
+
 
 
 
