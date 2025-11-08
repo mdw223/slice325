@@ -1,3 +1,4 @@
++++ date = '2025-11-08T10:52:26-05:00' title = 'Understanding Hypertension and Diabetes' pre = "d. " weight = 5 +++
 # Section II: Understanding Hypertension and Diabetes
 
 ## Definitions
@@ -80,3 +81,4 @@ If left unmanaged, diabetes can lead to complications such as:
 - Nerve damage
 - Foot problems
 - Vision problems
+
