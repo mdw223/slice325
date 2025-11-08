@@ -5,7 +5,7 @@ pre = "g. "
 weight = 8 
 +++
 
-![test](/images/section-4/test.jpg)
+![test](/images/section-4/images-047.jpg)
 
 ## Risk Factors for Falls
 
