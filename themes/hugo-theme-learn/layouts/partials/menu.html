@@ -14,7 +14,7 @@
     <section id="homelinks">
       <ul>
         <li>
-            <a class="padding" href="{{ if .Site.Params.landingPageURL }}{{ .Site.BaseURL }}{{ .Site.Params.landingPageURL }}{{ else }}{{ .Site.BaseURL }}{{ end }}">
+            <a class="padding" href="{{ if .Site.Params.landingPageURL }}{{ .Site.Params.landingPageURL }}{{ else }}{{ .Site.BaseURL }}{{ end }}">
     {{ safeHTML (cond (ne .Site.Params.landingPageName nil) .Site.Params.landingPageName "<i class='fas fa-home'></i> Home") }}
 </a>
 
