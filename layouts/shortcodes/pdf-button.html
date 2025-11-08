@@ -1,34 +1,24 @@
-<div class="pdf-button-shortcode">
-  <button class="pdf-generate" 
-    data-name="{{ .Get "name" | default "John Doe" }}" 
-    data-course="{{ .Get "course" | default "Course Name" }}" 
-    data-score="{{ .Get "score" | default "100" }}"
-    style="padding: 10px 18px; background-color:#007bff; color:#fff; border:none; border-radius:4px; cursor:pointer; font-size:14px;">
+<div class="pdf-button-shortcode" data-course="{{ .Get "course" | default "Course Name" }}" data-score="{{ .Get "score" | default "0" }}">
+  {{ $id := .Get "id" | default (now.Unix) }}
+  <label for="pdf-name-{{ $id }}" class="sr-only">Your full name</label>
+  <input id="pdf-name-{{ $id }}" class="pdf-name" type="text" placeholder="{{ .Get "placeholder" | default "Enter your full name" }}" value="{{ .Get "name" | default "" }}" aria-label="Full name" />
+
+  <button type="button" class="pdf-generate" disabled aria-disabled="true" style="padding: 10px 18px; background-color:#007bff; color:#fff; border:none; border-radius:4px; cursor:pointer; font-size:14px; opacity:0.5;">
     {{ .Get "label" | default "Download Certificate" }}
   </button>
+
+  <span class="pdf-status" aria-live="polite" style="margin-left:10px; color:#666; font-weight:600;">
+    {{ .Get "status" | default "You must pass to download the certificate" }}
+  </span>
+
 </div>
 
-<script>
-(function () {
-  // Attach click handler to buttons created by this shortcode.
-  // Use a short timeout so this script is safely evaluated after DOM insertion.
-  setTimeout(function () {
-    var buttons = document.querySelectorAll('.pdf-button-shortcode .pdf-generate');
-    buttons.forEach(function (btn) {
-      // Avoid attaching multiple handlers
-      if (btn.dataset.pdfHandlerAttached) return;
-      btn.addEventListener('click', function (e) {
-        var name = btn.getAttribute('data-name') || 'John Doe';
-        var course = btn.getAttribute('data-course') || 'Course Name';
-        var score = btn.getAttribute('data-score') || '100';
-        if (typeof window.createCertificate === 'function') {
-          window.createCertificate(name, course, score);
-        } else {
-          console.error('createCertificate is not available. Make sure js/pdf-utils.js is loaded.');
-        }
-      });
-      btn.dataset.pdfHandlerAttached = '1';
-    });
-  }, 0);
-})();
-</script>
+<style>
+.pdf-button-shortcode { display:flex; gap:.5rem; align-items:center; margin:.8rem 0; }
+.pdf-button-shortcode .pdf-name { padding:.4rem .5rem; border:1px solid #ccc; border-radius:4px; min-width:220px; }
+.pdf-button-shortcode .pdf-generate { padding:.45rem .8rem; background:#007acc; color:#fff; border:none; border-radius:4px; cursor:pointer; }
+.pdf-button-shortcode .pdf-generate[disabled] { opacity:.5; cursor:not-allowed; }
+.sr-only { position:absolute; width:1px; height:1px; padding:0; margin:-1px; overflow:hidden; clip:rect(0,0,0,0); white-space:nowrap; border:0; }
+</style>
+
+<!-- Behavior is attached centrally by static/js/pdf-utils.js -->
