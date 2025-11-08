@@ -1,8 +1,8 @@
 +++ 
 date = '2025-11-08T10:52:26-05:00' 
 title = 'Nutrition and Diet for Hypertension and Diabetes' 
-pre = "e. " 
-weight = 6 
+pre = "f. " 
+weight = 7 
 +++
 # Section III: Nutrition and Diet for Hypertension and Diabetes
 
@@ -75,4 +75,5 @@ Using the "plate method" can help individuals manage portion sizes and maintain 
 
 ### Professional Guidance
 It's essential to consult with a healthcare professional or registered dietitian for personalized meal planning and nutrition advice.
+
 
