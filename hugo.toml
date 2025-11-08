@@ -1,4 +1,4 @@
-baseURL = '/slice325'
+baseURL = '/'
 languageCode = 'en-us'
 title = 'Slice325 Learn'
 theme = "hugo-theme-learn"
