@@ -1,10 +1,3 @@
-+++ 
-date = '2025-11-08T10:52:26-05:00' 
-title = 'Course Outlines'
-pre = "<b>c.</b>" 
-weight = 4 
-+++
-
 ## COURSE OUTLINE
 
 ### Section I: Introduction
