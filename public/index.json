@@ -1,41 +1,41 @@
 [
 {
-	"uri": "/basics/first-content/",
+	"uri": "//localhost:1313/basics/first-content/",
 	"title": "First Content",
 	"tags": [],
 	"description": "",
-	"content": "Chapter X Some Chapter title Lorem Ipsum.\n"
+	"content": "Chapter X Some Chapter title Lorem Ipsum.\nHugo Quiz ---\rprimary_color: orange\rsecondary_color: lightgray\rtext_color: black\rshuffle_questions: false\r---\r## The sound of dog\r---\rshuffle_answers: false\r---\rWhat do dogs sound like?\r\u003e Some hint\r- [ ] yes\r- [ ] no\r- [ ] `self.sound = \"meow\"`\r- [x] wuff\r## Put the [days](https://en.wikipedia.org/wiki/Day) in order!\r\u003e Monday is the *first* day of the week.\r1. Monday\r2. Tuesday\r3. Wednesday\r4. Friday\r5. Saturday "
 },
 {
-	"uri": "/basics/",
+	"uri": "//localhost:1313/basics/",
 	"title": "Basics",
 	"tags": [],
 	"description": "",
 	"content": "Chapter X Some Chapter title Lorem Ipsum.\n"
 },
 {
-	"uri": "/basics/second-content/",
+	"uri": "//localhost:1313/basics/second-content/",
 	"title": "Second Content",
 	"tags": [],
 	"description": "",
 	"content": ""
 },
 {
-	"uri": "/",
+	"uri": "//localhost:1313/",
 	"title": "Slice325 Learn",
 	"tags": [],
 	"description": "",
 	"content": ""
 },
 {
-	"uri": "/categories/",
+	"uri": "//localhost:1313/categories/",
 	"title": "Categories",
 	"tags": [],
 	"description": "",
 	"content": ""
 },
 {
-	"uri": "/tags/",
+	"uri": "//localhost:1313/tags/",
 	"title": "Tags",
 	"tags": [],
 	"description": "",

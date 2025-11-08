@@ -2,18 +2,18 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Slice325 Learn</title>
-    <link>/</link>
+    <link>//localhost:1313/</link>
     <description>Recent content on Slice325 Learn</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Sat, 08 Nov 2025 10:52:20 -0500</lastBuildDate>
-    <atom:link href="/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="//localhost:1313/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>First Content</title>
-      <link>/basics/first-content/</link>
+      <link>//localhost:1313/basics/first-content/</link>
       <pubDate>Sat, 08 Nov 2025 10:52:20 -0500</pubDate>
-      <guid>/basics/first-content/</guid>
-      <description>&lt;h3 id=&#34;chapter-x&#34;&gt;Chapter X&lt;/h3&gt;&#xA;&lt;h1 id=&#34;some-chapter-title&#34;&gt;Some Chapter title&lt;/h1&gt;&#xA;&lt;p&gt;Lorem Ipsum.&lt;/p&gt;</description>
+      <guid>//localhost:1313/basics/first-content/</guid>
+      <description>&lt;h3 id=&#34;chapter-x&#34;&gt;Chapter X&lt;/h3&gt;&#xA;&lt;h1 id=&#34;some-chapter-title&#34;&gt;Some Chapter title&lt;/h1&gt;&#xA;&lt;p&gt;Lorem Ipsum.&lt;/p&gt;&#xA;&lt;h1 id=&#34;hugo-quiz&#34;&gt;Hugo Quiz&lt;/h1&gt;&#xA;&#xD;&#xA;&lt;div class=&#39;quizdown&#39;&gt;&#xD;&#xA;  &#xD;&#xA;&#xD;&#xA;---&#xD;&#xA;primary_color: orange&#xD;&#xA;secondary_color: lightgray&#xD;&#xA;text_color: black&#xD;&#xA;shuffle_questions: false&#xD;&#xA;---&#xD;&#xA;&#xD;&#xA;## The sound of dog&#xD;&#xA;&#xD;&#xA;---&#xD;&#xA;shuffle_answers: false&#xD;&#xA;---&#xD;&#xA;&#xD;&#xA;What do dogs sound like?&#xD;&#xA;&#xD;&#xA;&gt; Some hint&#xD;&#xA;&#xD;&#xA;- [ ] yes&#xD;&#xA;- [ ] no&#xD;&#xA;- [ ] `self.sound = &#34;meow&#34;`&#xD;&#xA;- [x] wuff&#xD;&#xA;&#xD;&#xA;## Put the [days](https://en.wikipedia.org/wiki/Day) in order!&#xD;&#xA;&#xD;&#xA;&gt; Monday is the *first* day of the week.&#xD;&#xA;&#xD;&#xA;1. Monday&#xD;&#xA;2. Tuesday&#xD;&#xA;3. Wednesday&#xD;&#xA;4. Friday&#xD;&#xA;5. Saturday  &#xD;&#xA;&#xD;&#xA;&lt;/div&gt;</description>
     </item>
   </channel>
 </rss>
