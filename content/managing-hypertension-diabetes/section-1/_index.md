@@ -14,7 +14,7 @@ weight = 5
 - The goal is to provide clients with the knowledge and tools needed to manage their health effectively and reduce the risk of falls.
 
 ---
-
+![fruit](/slice325/images/section-1/image-020.jpg)
 ## Importance of Diet & Nutrition
 
 - Diet and nutrition play a critical role in managing hypertension and diabetes. A well-balanced diet can help individuals control their blood pressure and blood glucose levels, which are essential for reducing the risk of complications associated with these conditions.
@@ -38,6 +38,7 @@ These risk factors include:
 - Environmental hazards
 
 By addressing these risk factors through diet, exercise, and other lifestyle modifications, clients with hypertension and diabetes can reduce their risk of falls and improve their overall quality of life.
+
 
 
 
