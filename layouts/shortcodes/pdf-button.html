@@ -1,24 +1,153 @@
-<div class="pdf-button-shortcode" data-course="{{ .Get "course" | default "Course Name" }}" data-score="{{ .Get "score" | default "0" }}">
-  {{ $id := .Get "id" | default (now.Unix) }}
-  <label for="pdf-name-{{ $id }}" class="sr-only">Your full name</label>
-  <input id="pdf-name-{{ $id }}" class="pdf-name" type="text" placeholder="{{ .Get "placeholder" | default "Enter your full name" }}" value="{{ .Get "name" | default "" }}" aria-label="Full name" />
+<div class="certificate-generator" data-course="{{ .Get "course" | default "Course" }}">
+  <div class="certificate-form">
+    {{ $id := .Get "id" | default (now.Unix) }}
+    
+    <div class="form-group">
+      <label for="pdf-name-{{ $id }}">Your Full Name</label>
+      <input 
+        id="pdf-name-{{ $id }}" 
+        class="pdf-name" 
+        type="text" 
+        placeholder="Enter your full name" 
+        value=""
+        aria-label="Full name" 
+      />
+    </div>
 
-  <button type="button" class="pdf-generate" disabled aria-disabled="true" style="padding: 10px 18px; background-color:#007bff; color:#fff; border:none; border-radius:4px; cursor:pointer; font-size:14px; opacity:0.5;">
-    {{ .Get "label" | default "Download Certificate" }}
-  </button>
+    <div class="form-actions">
+      <button 
+        type="button" 
+        class="pdf-generate" 
+        disabled 
+        aria-disabled="true"
+      >
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="16" height="16" class="download-icon">
+          <path fill="currentColor" d="M19 9h-4V3H9v6H5l7 7 7-7zM5 18v2h14v-2H5z"/>
+        </svg>
+        {{ .Get "label" | default "Generate Certificate" }}
+      </button>
 
-  <span class="pdf-status" aria-live="polite" style="margin-left:10px; color:#666; font-weight:600;">
-    {{ .Get "status" | default "You must pass to download the certificate" }}
-  </span>
-
+      <div class="pdf-status" aria-live="polite">
+        {{ .Get "status" | default "You must pass to download the certificate" }}
+      </div>
+    </div>
+  </div>
 </div>
 
 <style>
-.pdf-button-shortcode { display:flex; gap:.5rem; align-items:center; margin:.8rem 0; }
-.pdf-button-shortcode .pdf-name { padding:.4rem .5rem; border:1px solid #ccc; border-radius:4px; min-width:220px; }
-.pdf-button-shortcode .pdf-generate { padding:.45rem .8rem; background:#007acc; color:#fff; border:none; border-radius:4px; cursor:pointer; }
-.pdf-button-shortcode .pdf-generate[disabled] { opacity:.5; cursor:not-allowed; }
-.sr-only { position:absolute; width:1px; height:1px; padding:0; margin:-1px; overflow:hidden; clip:rect(0,0,0,0); white-space:nowrap; border:0; }
-</style>
+.certificate-generator {
+  max-width: 600px;
+  margin: 2rem auto;
+  padding: 1.5rem;
+  background: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
 
-<!-- Behavior is attached centrally by static/js/pdf-utils.js -->
+.certificate-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.form-group label {
+  font-weight: 500;
+  color: #333;
+  font-size: 0.95rem;
+}
+
+.pdf-name {
+  padding: 0.75rem 1rem;
+  border: 1px solid #e0e0e0;
+  border-radius: 6px;
+  font-size: 1rem;
+  width: 100%;
+  transition: border-color 0.2s;
+}
+
+.pdf-name:focus {
+  border-color: #007bff;
+  outline: none;
+  box-shadow: 0 0 0 2px rgba(0, 123, 255, 0.1);
+}
+
+.form-actions {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  align-items: center;
+}
+
+.pdf-generate {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.75rem 1.5rem;
+  background: #007bff;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-size: 1rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.2s;
+  width: 100%;
+  justify-content: center;
+}
+
+.pdf-generate:not([disabled]):hover {
+  background: #0056b3;
+  transform: translateY(-1px);
+}
+
+.pdf-generate[disabled] {
+  background: #e0e0e0;
+  cursor: not-allowed;
+  opacity: 0.7;
+}
+
+.download-icon {
+  transition: transform 0.2s;
+}
+
+.pdf-generate:not([disabled]):hover .download-icon {
+  transform: translateY(2px);
+}
+
+.pdf-status {
+  text-align: center;
+  font-size: 0.95rem;
+  color: #666;
+  font-weight: 500;
+  padding: 0.5rem;
+  border-radius: 4px;
+  background: #f8f9fa;
+  width: 100%;
+}
+
+.pdf-status:empty {
+  display: none;
+}
+
+@media (min-width: 768px) {
+  .form-actions {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  
+  .pdf-generate {
+    width: auto;
+  }
+  
+  .pdf-status {
+    flex: 1;
+    margin-left: 1rem;
+  }
+}
+</style>

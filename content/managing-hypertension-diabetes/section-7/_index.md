@@ -102,3 +102,4 @@ shuffleAnswers: true
 1. [ ] I do not know
 {{< /quizdown >}}
 
+{{< pdf-button course="Managing Hypertension and Diabetes" >}}
