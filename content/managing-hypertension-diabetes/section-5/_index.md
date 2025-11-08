@@ -45,7 +45,7 @@ Limiting alcohol is important because:
 
 ## Sleep and Its Impact
 
-![A couple sleeping in bed.](/slice325/images/section-5/image-062.jpg)
+![A couple sleeping in bed.](/slice325/images/section-5/image-065.jpg)
 
 - Sleep plays a critical role in managing hypertension and diabetes.
 

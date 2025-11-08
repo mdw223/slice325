@@ -35,7 +35,7 @@ Various medications are available to help manage hypertension and diabetes.
 
 ## Side Effects and Interactions
 
-![A care giver taking blood pressure readings.](/slice325/images/section-5/image-070.jpg)
+![A care giver taking blood pressure readings.](/slice325/images/section-6/image-070.jpg)
 
 - Medications for hypertension and diabetes can have potential side effects and may interact with other medications, supplements, or certain foods.
 
