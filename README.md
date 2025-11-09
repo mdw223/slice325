@@ -1,6 +1,6 @@
 # MAINTENANCE AND CONTRIBUTING GUIDE
 
-- This document provides guidelines for maintaining and contributing to the Slice325 course content.
+- This document provides guidelines for maintaining and contributing to the [Slice325](https://slice325.org/) course content.
 
 ## Techonologies Used
 
